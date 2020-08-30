@@ -258,7 +258,8 @@ article img {
 	align-items: center;
 	padding: var(--padding) calc(var(--padding) * 2);
 	background-color: var( --button-alternate-color);
-	color: var(--button-color);
+	color: white;
+	//color: var(--button-color);
 	border-radius: 12px;
 	text-decoration: none;
 	appearance: none;
@@ -268,7 +269,8 @@ article img {
 	transition: background .3s linear;
 	&:hover {
 		background-color: var(--button-color);
-		color: var( --button-alternate-color);
+		color: white;
+		//color: var( --button-alternate-color);
 	}
 	&.-outline {
 		color: var(--primary-color);
