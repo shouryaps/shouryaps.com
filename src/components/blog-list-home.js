@@ -41,6 +41,11 @@ export default function BlogListHome() {
                     }
                   }
                 }
+                fields {
+                  readingTime {
+                    text
+                  }
+                }
               }
             }
           }

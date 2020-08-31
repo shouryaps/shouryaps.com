@@ -31,7 +31,7 @@ const Pagination = (props) => (
 
 const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, fields, html, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
   const { previous, next } = pageContext
 
@@ -52,7 +52,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <time>{frontmatter.date}</time>
+            <time>{frontmatter.date}</time> &middot; <span>{fields.readingTime.text}</span>
           </section>
           {Image ? (
             <Img 
@@ -102,6 +102,11 @@ export const pageQuery = graphql`
               src
             }
           }
+        }
+      }
+      fields {
+        readingTime {
+          text
         }
       }
     }

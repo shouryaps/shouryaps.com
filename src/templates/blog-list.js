@@ -29,7 +29,12 @@ export const blogListQuery = graphql`
                   ...GatsbyImageSharpFluidLimitPresentationSize
                 }
 							}
-						}
+            }
+          }
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }
