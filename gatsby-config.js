@@ -3,12 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const netlifyCmsPaths = {
-  resolve: `gatsby-plugin-netlify-cms-paths`,
-  options: {
-    cmsConfig: `/static/admin/config.yml`,
-  },
-}
 
 const settings = require("./src/util/site.json")
 
