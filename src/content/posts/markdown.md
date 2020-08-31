@@ -4,7 +4,7 @@ title: "Markdown: Syntax"
 slug: /markdown
 date: 2020-08-30T05:53:16.102Z
 description: "Markdown: Syntax"
-featuredImage: /assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+featuredImage: images/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
 ---
 
 ## Overview
@@ -271,7 +271,7 @@ ampersands and angle brackets. For example, this:
         &copy; 2004 Foo Corporation
     </div>
 
-![Some Image](/assets/charles-deluvio-d-vdqmtfaau-unsplash.jpg)
+![Some Image](images/charles-deluvio-d-vdqmtfaau-unsplash.jpg)
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means

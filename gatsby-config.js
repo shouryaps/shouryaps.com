@@ -36,7 +36,6 @@ module.exports = {
       options: {
         gfm: true,
         plugins: [
-          netlifyCmsPaths,
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-images`,
@@ -68,7 +67,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
