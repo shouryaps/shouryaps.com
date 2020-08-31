@@ -77,10 +77,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Foundation`,
-        short_name: `Foundation`,
+        name: `Shourya's Website`,
+        short_name: `Shourya's Website`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
+        background_color: `#3a86ff`,
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: `static/assets/shourya.png`,
