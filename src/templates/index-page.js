@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import { RiArrowRightSLine } from "react-icons/ri"
+import { motion, useAnimation } from "framer-motion"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
@@ -13,21 +13,13 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        title
-        tagline
-        featuredImage {
+        name
+        icon {
           childImageSharp {
-            fluid(maxWidth: 480, maxHeight: 380, quality: 80, srcSetBreakpoints: [960, 1440]) {
+            fluid(maxWidth: 60, quality: 90) {
               ...GatsbyImageSharpFluid
             }
-            sizes {
-              src
-            }
           }
-        }
-        cta {
-          ctaText
-          ctaLink
         }
       }
     }
@@ -36,26 +28,34 @@ export const pageQuery = graphql`
 
 const HomePage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
-  const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
+  const { frontmatter } = markdownRemark
+
+  // Controls to orchestrate animations of waving hand
+  const eControls = useAnimation()
+
+  useEffect(() => {
+    const pageLoadSequence = async () => {
+      eControls.start({
+        rotate: [0, -10, 12, -10, 9, 0, 0, 0, 0, 0, 0],
+        transition: { duration: 2.5, loop: 5, repeatDelay: 1 },
+      })
+    }
+    pageLoadSequence()
+  }, [eControls])
+
 	return (
 		<Layout>
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
         <div>
-          <p class="tagline">{frontmatter.tagline}</p>
-          <h1 class="title">{frontmatter.title}</h1>
-          <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
-          <Link to={frontmatter.cta.ctaLink} className="button">{frontmatter.cta.ctaText}<span class="icon -right"><RiArrowRightSLine/></span></Link>
-        </div>
-        <div>
-          {Image ? (
-            <Img 
-              fluid={Image} 
-              alt={frontmatter.title + ' - Featured image'}
-              className="featured-image"
-            />
-          ) : ""}
+          <div class="greetings">Hi
+            <motion.div animate={eControls}>
+                  <Img className="emoji" fluid={frontmatter.icon.childImageSharp.fluid} />
+            </motion.div>
+          </div>
+          <p class="title">I'm <strong>{frontmatter.name}</strong></p>
+          <p class="subheading">Welcome to my home on the internet</p>
+          <p class="description">You read more <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
         </div>
       </div>
       <BlogListHome/>

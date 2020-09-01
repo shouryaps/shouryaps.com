@@ -2,11 +2,6 @@
 @import "defaults";
 @import "lib/css-grid-utility";
 
-// .primary-container {
-// 	display: grid;
-// 	grid-template-rows: 60px auto 60px;
-// 	min-height: 100vh;
-// }
 .primary-container main {
 	min-height: calc(100vh - 60px - 81px);
 }
@@ -16,7 +11,7 @@
   align-items: center;
   position: relative;
   background: var(--header-bg);
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 .site-navigation {
   ul {
@@ -111,25 +106,33 @@
   }
 }
 .home-banner {
-	padding: 60px 0;
+	padding: 50px 0 50px;
 	align-items: center;
 	.title {
-		font-size: 48px;
-		line-height: 48px;
+		font-size: 42px;
+		line-height: 42px;
 		margin: 0 0 5px;
 	}
-	.tagline {
-		font-size: 24px;
-		margin-bottom: 2px;
-		color: rgba(0,0,0,0.7)
+	.greetings {
+		font-size: 42px;
+		margin-bottom: 5px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		.emoji {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+			width: 3rem;
+		}
+	}
+	.subheading {
+		margin: 15px 0 15px;
+		font-size: 32px;
 	}
 	.description {
 		font-size: 20px;
 		line-height: 1.4;
 		margin-bottom: 30px;
-	}
-	.featured-image {
-		border-radius: 12px;
 	}
 	@media (max-width: $breakpoint-md) {
 		padding-top: 30px;
