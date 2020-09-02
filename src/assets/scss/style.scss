@@ -5,20 +5,9 @@
 .primary-container main {
 	min-height: calc(100vh - 60px - 81px);
 }
-.site-header {
-	display: flex;
-	justify-content: flex-start;
-	@media (max-width: $breakpoint-lg) {
-		justify-content: space-between;
-	}
-  align-items: center;
-  position: relative;
-	padding: 20px 20px;
-	max-width: var(--max-width); 
-  margin: 0 auto;
-}
 
-.social-header {
+.social-links {
+	margin-right: 15px;
 	a {
 		margin-left: 15px;
 		color: rgba(0,0,0,0.7);
@@ -29,6 +18,22 @@
 	font-size: 24px;
 	@media (max-width: $breakpoint-lg) {
 		display: none;
+	}
+}
+
+.site-header {
+	display: flex;
+	justify-content: flex-start;
+	@media (max-width: $breakpoint-lg) {
+		justify-content: space-between;
+	}
+  align-items: center;
+  position: relative;
+	padding: 20px 20px;
+	max-width: var(--max-width); 
+	margin: 0 auto;
+	.social-links {
+		margin-right: 0;
 	}
 }
 

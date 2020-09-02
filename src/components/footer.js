@@ -19,7 +19,7 @@ const Footer = () => {
   return(
     <footer className="site-footer">
       <div className="container">
-        <p><Social username={socialHandle} email={email} /></p>
+        <Social className="margin-right-15" username={socialHandle} email={email} />
         <p>Copyright Shourya Pratap Singh &#169; 2020 </p>
       </div>
     </footer>

@@ -5,7 +5,7 @@ class Social extends React.Component {
 
   render () {
     return (
-      <div className="social-header">
+      <div className="social-links">
         <a aria-label="mail" href={"mailto:"+this.props.email}><RiMailLine /></a>
         <a aria-label="linkedin" href={"https://linkedin.com/in/"+this.props.username}><RiLinkedinBoxFill /></a>
         <a aria-label="twitter" href={"https://twitter.com/"+this.props.username}><RiTwitterFill /></a>
