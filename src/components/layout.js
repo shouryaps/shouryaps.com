@@ -12,7 +12,7 @@ const query = graphql`
 query LayoutQuery {
   site {
     siteMetadata {
-      siteTitle: title
+      siteTitle: logoHeader
     }
   }
 }
