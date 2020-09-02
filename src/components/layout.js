@@ -14,6 +14,7 @@ query LayoutQuery {
   site {
     siteMetadata {
       siteTitle: logoHeader
+      socialHandle
     }
   }
 }
@@ -22,14 +23,14 @@ query LayoutQuery {
 const Layout = ({children, className}) => {
 
   const { site } = useStaticQuery(query)
-  const { siteTitle } = site.siteMetadata
+  const { siteTitle, socialHandle } = site.siteMetadata
 
   return (
     <div className="primary-container">
       <Header>
         <Logo title={siteTitle} />
         <Navigation/>
-        <Social/>
+        <Social username={socialHandle} />
       </Header>
       <main className={"container " + className}>
         {children}
