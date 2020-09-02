@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Logo from "./logo"
 import Navigation from "./navigation";
+import Social from "./social";
 
 import "../assets/scss/style.scss"
 import Footer from "./footer";
@@ -28,6 +29,7 @@ const Layout = ({children, className}) => {
       <Header>
         <Logo title={siteTitle} />
         <Navigation/>
+        <Social/>
       </Header>
       <main className={"container " + className}>
         {children}

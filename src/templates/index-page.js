@@ -48,14 +48,14 @@ const HomePage = ({ data }) => {
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
         <div>
-          <div class="greetings">Hi
+          <div className="greetings">Hi
             <motion.div animate={eControls}>
                   <Img className="emoji" fluid={frontmatter.icon.childImageSharp.fluid} />
             </motion.div>
           </div>
-          <p class="title">I'm <strong>{frontmatter.name}</strong></p>
-          <p class="subheading">Welcome to my home on the internet</p>
-          <p class="description">You read more <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
+          <p className="title">I'm <strong>{frontmatter.name}</strong></p>
+          <p className="subheading">Welcome to my home on the internet</p>
+          <p className="description">You read more <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
         </div>
       </div>
       <BlogListHome/>
