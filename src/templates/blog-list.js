@@ -100,10 +100,10 @@ class BlogIndex extends React.Component {
     return (
       <Layout className="blog-page">
         <SEO
-          title={"Blog — Page " + currentPage + " of " + numPages}
+          title={"Shourya's Blog — Page " + currentPage + " of " + numPages}
           description={"blog page " + currentPage + " of " + numPages }
         />
-        <h1>Blog</h1>
+        <h1>Shourya's Blog</h1>
         <div className="grids col-1 sm-2 lg-3">
           {posts}
         </div>

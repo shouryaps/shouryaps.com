@@ -2,9 +2,9 @@
 template: blog-post
 title: "Markdown: Syntax 2"
 slug: /markdown-2
-date: 2020-08-30T05:53:16.102Z
+date: 2020-08-31T05:53:16.102Z
 description: "Markdown: Syntax 2"
-featuredImage: images/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+featuredImage: images/charles-deluvio-d-vdqmtfaau-unsplash.jpg
 ---
 
 ## Overview
