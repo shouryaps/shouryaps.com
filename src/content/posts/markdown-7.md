@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: "Markdown: Syntax 7"
+title: "Sample Post 7"
 slug: /markdown-7
 date: 2020-09-02T08:53:16.102Z
-description: "Markdown: Syntax 7"
+description: "Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions. While Markdown's syntax has been influenced by several existing text-to-HTML"
 featuredImage: images/kevin-ku-aiyBwbrWWlo-unsplash.jpg
 ---
 
