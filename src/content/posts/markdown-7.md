@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: "Sample Post 7"
+title: "Some long post title to test the design 7"
 slug: /markdown-7
 date: 2020-09-02T08:53:16.102Z
 description: "Suspendisse consequat lacus vel dui tincidunt, in euismod tellus efficitur. Nullam sem nisi, faucibus fringilla efficitur nec, viverra sit amet urna. Praesent maximus metus at dignissim ultricies."

@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: "Sample Post 5"
+title: "Some long post title to test the design 5"
 slug: /markdown-5
 date: 2020-09-02T06:53:16.102Z
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus, non egestas enim. Nunc ac tincidunt elit. Etiam et mi non diam laoreet ultricies eget vel risus"

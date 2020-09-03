@@ -52,10 +52,10 @@ const HomePage = ({ data }) => {
             <motion.div animate={eControls}>
                   <Img className="emoji" fluid={frontmatter.icon.childImageSharp.fluid} />
             </motion.div>
+            I'm&nbsp;<strong>{frontmatter.name}</strong>
           </div>
-          <p className="title">I'm <strong>{frontmatter.name}</strong></p>
           <p className="subheading">Welcome to my home on the internet</p>
-          <p className="description">You read more <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
+          <p className="description">You can read <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
         </div>
       </div>
       <BlogListHome/>
