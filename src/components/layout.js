@@ -21,13 +21,13 @@ query LayoutQuery {
 }
 `
 
-const Layout = ({children, className}) => {
+const Layout = ({children, className, isHero}) => {
 
   const { site } = useStaticQuery(query)
   const { siteTitle, socialHandle, email } = site.siteMetadata
 
   return (
-    <div className="primary-container">
+    <div className={isHero ? "primary-container hero" : "primary-container" }>
       <Header>
         <Logo title={siteTitle} />
         <Navigation/>

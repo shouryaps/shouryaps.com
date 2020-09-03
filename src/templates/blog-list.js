@@ -99,7 +99,7 @@ class BlogIndex extends React.Component {
     }
     
     return (
-      <Layout className="blog-page">
+      <Layout className="blog-page" isHero={true}>
         <SEO
           title={"Shourya's Blog — Page " + currentPage + " of " + numPages}
           description={"blog page " + currentPage + " of " + numPages }

@@ -44,7 +44,7 @@ const HomePage = ({ data }) => {
   }, [eControls])
 
 	return (
-		<Layout>
+		<Layout isHero={true}>
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
         <div>

@@ -6,6 +6,10 @@
 	min-height: calc(100vh - 60px - 81px);
 }
 
+.hero {
+	background: var(--hero-backgroud-color);
+}
+
 .social-links {
 	margin-right: 15px;
 	a {
