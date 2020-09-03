@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: "Markdown: Syntax"
+title: "Sample Post"
 slug: /markdown
 date: 2020-08-30T05:53:16.102Z
-description: "Markdown: Syntax"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus, non egestas enim. Nunc ac tincidunt elit. Etiam et mi non diam laoreet ultricies eget vel risus"
 featuredImage: images/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
 ---
 

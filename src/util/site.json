@@ -1,11 +1,14 @@
 {
   "meta": {
-    "title": "Shourya's Website",
+    "title": "Shourya Pratap Singh",
+    "logoHeader": "@shouryaps",
     "titleTemplate": "%s",
     "description": "Shourya's Page",
     "siteUrl": "https://shouryaps.com",
     "image": "/assets/shourya.png",
-    "twitterUsername": "@shouryaps"
+    "twitterUsername": "@shouryaps",
+    "socialHandle": "shouryaps",
+    "email": "shourya4@gmail.com"
   },
   "ga": "UA-111548840-1"
 }
