@@ -45,7 +45,7 @@ const Post = ({ data, pageContext }) => {
       <SEO
         title={frontmatter.title + " - Shourya Pratap Singh"}
         description={frontmatter.description ? frontmatter.description : excerpt}
-        image={Image}
+        image={Image.src}
         article={true}
       />
       <article className="blog-post">
