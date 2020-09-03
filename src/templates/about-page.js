@@ -23,7 +23,7 @@ const AboutPage = ({ data }) => {
 	return (
 		<Layout className="page">
 			<SEO
-				title={frontmatter.title}
+				title={frontmatter.title+" - Shourya Pratap Singh"}
 				description={excerpt}
 			/>
 			<div className="wrapper">
