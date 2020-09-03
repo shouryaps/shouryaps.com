@@ -54,7 +54,8 @@ const HomePage = ({ data }) => {
             </motion.div>
             <div className="introduction">I'm&nbsp;<strong>{frontmatter.name}</strong></div>
           </div>
-          <p className="subheading">Welcome to my home on the internet</p>
+          {/* <p className="subheading">Welcome to my home on the internet</p> */}
+          <p className="subheading">this is a work in progress</p>
           <p className="description">You can read <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
         </div>
       </div>

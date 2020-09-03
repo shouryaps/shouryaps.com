@@ -178,7 +178,7 @@
 }
 .post-card {
 	display: flex;
-	padding: 16px;
+	padding: 18px;
 	height: 100%;
 	border: 1px solid rgba(0,0,0,0.08);
 	background-color:#fff;
@@ -190,7 +190,7 @@
 		width: 100%;
 		@media (min-width: $breakpoint-md) {
 			.gatsby-image-wrapper {
-				top: 52%;
+				top: 50%;
 				transform: translateY(-50%);
 			}
 		}
@@ -222,7 +222,7 @@
 		color: rgba(0,0,0,0.8);
 	}
 	.post-content {
-		margin-top: 16px;
+		padding-right: 18px;
 	}
 	@media (max-width: $breakpoint-md) {
 		flex-direction: column;
