@@ -201,7 +201,7 @@
 		margin: 0 0 3px;
 		font-size: 1.5rem;
 		font-weight: 600;
-		color: var(--post-link-color);
+		color: var(--post-title-color);
 	}
 	&:hover {
 		border: 1px solid rgba(0,0,0,0.12);
@@ -305,9 +305,8 @@ article img {
 	display: inline-flex;
 	align-items: center;
 	padding: var(--padding) calc(var(--padding) * 2);
-	background-color: var( --button-alternate-color);
-	color: white;
-	//color: var(--button-color);
+	background-color: var( --button-color);
+	color: var(--button-text-color);
 	border-radius: 12px;
 	text-decoration: none;
 	appearance: none;
@@ -316,18 +315,8 @@ article img {
 	line-height: 1;
 	transition: background .3s linear;
 	&:hover {
-		background-color: var(--button-color);
-		color: white;
-		//color: var( --button-alternate-color);
-	}
-	&.-outline {
-		color: var(--primary-color);
-		box-shadow: 0 0 1px rgba(0,0,0,0.6);
-		background: #fff;
-		&:hover {
-			box-shadow: 0 0 1px rgba(0,0,0,0.8);
-			background: #f2f2f2;
-		}
+		background-color: var(--button-hover-color);
+		color: var(--button-text-color);
 	}
 	& + .button {
 		margin-left: 20px;
@@ -388,7 +377,7 @@ article img {
 		font-weight: bold;
 		line-height: 1;
 		&.is-active {
-			color: var(--header-bg);
+			color: #000000;
 			pointer-events: none;
 		}
 	}

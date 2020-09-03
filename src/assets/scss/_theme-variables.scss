@@ -14,23 +14,19 @@ $breakpoint-xl: 1200px;
 	--font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
   --font-size-small: 12px;
   
-  --primary-color: #3a86ff;
-  --header-bg: #3a86ff;
+  --primary-color: #008dea;
 
-  --home-link-color: #00bbf9;
-  --home-link-hover-color:  var(--primary-color);
+  --button-color: #008dea;
+  --button-hover-color: #007ed1;
+  --button-text-color: #ffffff;
+  --button-hover-text-color: #ffffff;
 
-  --button-color: #00bbf9;
-  --button-alternate-color: #3a86ff;
+  --home-link-color: #008dea;
+  --home-link-hover-color: #007ed1;
 
-  --post-link-color: #0F070B;
+  --post-title-color: #0F070B;
 
-
-  --nav-link-hover-bg: #111;
   --text-color-meta: rgba(0,0,0,0.5);
-
-  --label-text: rgba(0,0,0,0.5);
-  --input-focus-border: #83AAAC;
   
   // CSS Grid Utility
   --grid-gap: 30px; 
