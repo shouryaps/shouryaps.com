@@ -1,11 +1,12 @@
 import React from "react"
-import { RiMailLine, RiLinkedinBoxFill, RiTwitterFill, RiGithubFill, RiInstagramFill, RiFacebookCircleFill } from "react-icons/ri"
+import { RiRssFill, RiMailLine, RiLinkedinBoxFill, RiTwitterFill, RiGithubFill, RiInstagramFill, RiFacebookCircleFill } from "react-icons/ri"
 
 class Social extends React.Component {
 
   render () {
     return (
       <div className="social-links">
+        <a aria-label="rss" href="/rss.xml"><RiRssFill /></a>
         <a aria-label="mail" href={"mailto:"+this.props.email}><RiMailLine /></a>
         <a aria-label="linkedin" href={"https://linkedin.com/in/"+this.props.username}><RiLinkedinBoxFill /></a>
         <a aria-label="twitter" href={"https://twitter.com/"+this.props.username}><RiTwitterFill /></a>
