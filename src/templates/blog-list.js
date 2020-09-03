@@ -21,10 +21,11 @@ export const blogListQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             slug
-						title
+            title
+            description
 						featuredImage {
 							childImageSharp {
-								fluid(maxWidth: 540, maxHeight: 360, quality: 80) {
+								fluid(maxWidth: 768, quality: 80) {
                   ...GatsbyImageSharpFluid
                   ...GatsbyImageSharpFluidLimitPresentationSize
                 }
@@ -104,7 +105,7 @@ class BlogIndex extends React.Component {
           description={"blog page " + currentPage + " of " + numPages }
         />
         <h1>Shourya's Blog</h1>
-        <div className="grids col-1 sm-2 lg-3">
+        <div className="grids col-1 sm-1 lg-2">
           {posts}
         </div>
         <Pagination {...props} />

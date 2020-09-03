@@ -3,7 +3,7 @@ template: blog-post
 title: "Sample Post 2"
 slug: /sample-post-2
 date: 2020-08-31T05:53:16.102Z
-description: "Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions. While Markdown's syntax has been influenced by several existing text-to-HTML"
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus, non egestas enim. Nunc ac tincidunt elit. Etiam et mi non diam laoreet ultricies eget vel risus"
 featuredImage: images/charles-deluvio-d-vdqmtfaau-unsplash.jpg
 ---
 

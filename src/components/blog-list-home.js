@@ -7,7 +7,7 @@ import PostCard from "./post-card"
 const PostMaker = ({ data }) => (
   <section className="home-posts">
     <h2>Latest in <strong>Blog</strong> <span className="icon -right"><RiArrowDownLine className="vertical-align" /></span></h2>
-    <div className="grids col-1 sm-2 lg-3">
+    <div className="grids col-1 sm-2 lg-2">
       {data}
     </div>
     <Link className="button" to="/blog">See more<span className="icon -right"><RiArrowRightSLine/></span></Link>
@@ -22,7 +22,7 @@ export default function BlogListHome() {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { frontmatter: { template: { eq: "blog-post" } } }
-            limit: 3
+            limit: 2
           ) {
             edges {
               node {
@@ -32,6 +32,7 @@ export default function BlogListHome() {
                   date(formatString: "MMMM DD, YYYY")
                   slug
                   title
+                  description
                   featuredImage {
                     childImageSharp {
                       fluid(maxWidth: 540, maxHeight: 360, quality: 80) {
