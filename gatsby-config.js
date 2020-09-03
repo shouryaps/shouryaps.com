@@ -71,8 +71,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Shourya's Website`,
-        short_name: `Shourya's Website`,
+        name: `Shourya Pratap Singh`,
+        short_name: `Shourya Pratap Singh`,
         start_url: `/`,
         background_color: `#3a86ff`,
         theme_color: `#a2466c`,
@@ -81,5 +81,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-feed'
   ],
 }
