@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion, useAnimation } from "framer-motion"
 
@@ -17,7 +17,14 @@ export const pageQuery = graphql`
         icon {
           childImageSharp {
             fluid(maxWidth: 60, quality: 90) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
+        illustration {
+          childImageSharp {
+            fluid(maxWidth: 480, quality: 100) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -48,15 +55,18 @@ const HomePage = ({ data }) => {
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
         <div>
-          <div className="greetings"><div>Hi</div>
+          <div className="greetings">
             <motion.div animate={eControls}>
                   <Img className="emoji" fluid={frontmatter.icon.childImageSharp.fluid} />
             </motion.div>
-            <div className="introduction">I'm&nbsp;<strong>{frontmatter.name}</strong></div>
+            Hello there!
           </div>
-          {/* <p className="subheading">Welcome to my home on the internet</p> */}
-          <p className="subheading">this is a work in progress</p>
-          <p className="description">You can read <Link to="/about">about me here</Link> or read my latest blog posts below.</p>
+          <div className="introduction">I'm&nbsp;{frontmatter.name}</div>
+          <div className="subheading">This page is a work in progress</div>
+          {/* <div className="subheading">You can read <Link to="/about">about me here</Link> or read my latest blog posts </div>below. */}
+        </div>
+        <div>
+          <Img fluid={frontmatter.illustration.childImageSharp.fluid} />
         </div>
       </div>
       <BlogListHome/>
