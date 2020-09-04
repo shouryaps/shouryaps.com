@@ -158,6 +158,11 @@
 		color: #6F6F6F;
 		font-size: 28px;
 	}
+	@media (max-width: $breakpoint-sm) {
+		.image-holder {
+			display: none;
+		}
+	}
 	@media (max-width: $breakpoint-md) {
 		padding-top: 30px;
 		> div:nth-child(1) {
@@ -221,6 +226,7 @@
 	}
 	@media (max-width: $breakpoint-md) {
 		flex-direction: column;
+		justify-content: space-between;
 		padding: 0;
 		.post-content {
 			padding: 16px;

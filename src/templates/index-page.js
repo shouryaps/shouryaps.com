@@ -65,7 +65,7 @@ const HomePage = ({ data }) => {
           <div className="subheading">This page is a work in progress</div>
           {/* <div className="subheading">You can read <Link to="/about">about me here</Link> or read my latest blog posts </div>below. */}
         </div>
-        <div>
+        <div className="image-holder">
           <Img fluid={frontmatter.illustration.childImageSharp.fluid} />
         </div>
       </div>
