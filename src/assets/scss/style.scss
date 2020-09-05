@@ -27,6 +27,35 @@
 		outline: none;
 	}
 	font-size: 24px;
+
+	.social-mail-button {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.social-mail-button .tooltiptext {
+		font-size: 12px;
+		visibility: hidden;
+		width: 80px;
+		background-color: #6F6F6F;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px;
+		position: absolute;
+		z-index: 1;
+		top: 100%;
+		left: 50%;
+		margin-left: -40px;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+	
+	.social-mail-button:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+
 	@media (max-width: $breakpoint-lg) {
 		display: none;
 	}

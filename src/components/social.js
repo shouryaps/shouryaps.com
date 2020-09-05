@@ -3,11 +3,28 @@ import { RiRssFill, RiMailLine, RiLinkedinBoxFill, RiTwitterFill, RiGithubFill, 
 
 class Social extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.copyMail = this.copyMail.bind(this);
+  }
+
+  copyMail() {
+    navigator.clipboard.writeText(this.props.email)
+    document.getElementById("mailtooltip").innerHTML = "Copied";
+  }
+
+  copiedMail() {
+    document.getElementById("mailtooltip").innerHTML = "Copy Email";
+  }
+
   render () {
     return (
       <div className="social-links">
         <a aria-label="rss" href="/rss.xml"><RiRssFill /></a>
-        <button aria-label="mail" onClick={() => {navigator.clipboard.writeText(this.props.email)}}><RiMailLine /></button>
+        <button className="social-mail-button" aria-label="mail" onClick={this.copyMail} onMouseOut={this.copiedMail} onBlur={this.copiedMail}>
+          <RiMailLine />
+          <span className="tooltiptext" id="mailtooltip">Copy Email</span>
+        </button>
         <a aria-label="linkedin" href={"https://linkedin.com/in/"+this.props.username}><RiLinkedinBoxFill /></a>
         <a aria-label="twitter" href={"https://twitter.com/"+this.props.username}><RiTwitterFill /></a>
         <a aria-label="github" href={"https://github.com/"+this.props.username}><RiGithubFill /></a>
