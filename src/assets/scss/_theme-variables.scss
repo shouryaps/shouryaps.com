@@ -8,7 +8,7 @@ $breakpoint-xl: 1200px;
 
 :root {
 
-  --hero-backgroud-color: #f0f0f0;
+  --hero-background-color: #f0f0f0;
 
   --max-width: 1240px;
 
@@ -25,6 +25,11 @@ $breakpoint-xl: 1200px;
 
   --home-link-color: #008dea;
   --home-link-hover-color: #007ed1;
+
+  --tooltip-background-color: #6F6F6F;
+  --tooltip-text-color: #fff;
+
+  --border-radius: 6px;
 
   --post-title-color: #0F070B;
 

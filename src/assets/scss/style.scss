@@ -7,7 +7,7 @@
 }
 
 .hero {
-	background: var(--hero-backgroud-color);
+	background: var(--hero-background-color);
 }
 
 .social-links {
@@ -44,10 +44,10 @@
 		font-size: 12px;
 		visibility: hidden;
 		width: 80px;
-		background-color: #6F6F6F;
-		color: #fff;
+		background-color: var(--tooltip-background-color);
+		color: var(--tooltip-text-color);
 		text-align: center;
-		border-radius: 6px;
+		border-radius: var(--border-radius);
 		padding: 5px;
 		position: absolute;
 		z-index: 1;
@@ -147,7 +147,7 @@
       background: white;
       width: 100%;
 			max-width: 320px;    
-			border-radius: 0 0 0 6px;
+			border-radius: 0 0 0 var(--border-radius);
 			border: 1px solid rgba(0,0,0,0.12);
 			box-shadow: 0 30px 60px rgba(0,0,0,0.1);
       overflow: hidden;
@@ -241,7 +241,7 @@
 	border: 1px solid rgba(0,0,0,0.08);
 	background-color:#fff;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-	border-radius: 6px;
+	border-radius: var(--border-radius);
 	transition: box-shadow .3s linear;
 	.featured-image-div {
 		min-width: 250px;
@@ -254,7 +254,7 @@
 		}
 		img {
 			margin: 0;
-			border-radius: 6px;
+			border-radius: var(--border-radius);
 		}
 	}
 	.title {
@@ -292,7 +292,7 @@
 		}
 		.featured-image-div {
 			img {
-				border-radius: 6px 6px 0 0;
+				border-radius: var(--border-radius) var(--border-radius) 0 0;
 			}
 		}
 	}
@@ -365,7 +365,7 @@ article img {
 	padding: var(--padding) calc(var(--padding) * 2);
 	background-color: var( --button-color);
 	color: var(--button-text-color);
-	border-radius: 6px;
+	border-radius: var(--border-radius);
 	text-decoration: none;
 	appearance: none;
 	border: none;
