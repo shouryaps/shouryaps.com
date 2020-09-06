@@ -102,8 +102,8 @@ class TagPage extends React.Component {
     return (
       <Layout className="blog-page" isHero={true}>
         <SEO
-          title={"Tagged \"" + tag + "\" — Shourya's Blog - Page " + currentPage + " of " + numPages}
-          description={"blog page " + currentPage + " of " + numPages }
+          title={`Tagged "${tag}" — Shourya's Blog - Page ${currentPage} of ${numPages}`}
+          description={`tagged "${tag}" blog pages ${currentPage} of ${numPages}`}
         />
         <div className="tag-page-header">
           <h1>

@@ -26,13 +26,15 @@ $breakpoint-xl: 1200px;
   --home-link-color: #008dea;
   --home-link-hover-color: #007ed1;
 
-  --tooltip-background-color: #6F6F6F;
+  --tooltip-background-color: rgba(111, 111, 111, 0.8);
   --tooltip-text-color: #fff;
 
   --border-radius: 6px;
 
   --tag-background-color: rgba(242, 242, 242, 1);
   --tag-text-color: rgba(117, 117, 117, 1);
+  --tag-cloud-background-color: rgba(111, 111, 111, 0.6);
+  --tag-cloud-text-color: #fff;
 
   --post-title-color: #0F070B;
 

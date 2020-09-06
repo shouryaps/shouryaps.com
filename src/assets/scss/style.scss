@@ -2,16 +2,6 @@
 @import "defaults";
 @import "lib/css-grid-utility";
 
-.tag-page-header {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content: space-between;
-	align-items: center;
-	h1 {
-		text-transform: capitalize;
-	}
-}
-
 .primary-container main {
 	min-height: calc(100vh - 60px - 81px);
 }
@@ -261,6 +251,14 @@ ul.tags {
 	}
 }
 
+.tag-cloud {
+	li.tag {
+		background-color: var(--tag-cloud-background-color) !important;
+		color: var(--tag-cloud-text-color) !important;
+		margin-bottom: 20px;
+	} 
+}
+
 .post-card {
 	display: flex;
 	padding: 18px;
@@ -440,6 +438,16 @@ article img {
 	max-width: none;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.tag-page-header {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	align-items: center;
+	h1 {
+		text-transform: capitalize;
+	}
 }
 
 .site-footer {

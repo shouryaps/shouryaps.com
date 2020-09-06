@@ -6,6 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const blogList = path.resolve(`./src/templates/blog-list.js`)
   const tagPage = path.resolve(`./src/templates/tag-page.js`)
+  const tagList = path.resolve(`./src/templates/tag-list.js`)
 
   const result = await graphql(`
     {
@@ -89,6 +90,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   // Create tag pages
+  createPage({
+    path: '/tags',
+    component: tagList
+  })
   for(var tag in tagCounts) {
     var numTagPages = Math.ceil(tagCounts[tag] / postsPerPage)
     Array.from({ length: numTagPages }).forEach((_, i) => {
