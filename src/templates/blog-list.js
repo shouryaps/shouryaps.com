@@ -23,6 +23,7 @@ export const blogListQuery = graphql`
             slug
             title
             description
+            tags
 						featuredImage {
 							childImageSharp {
 								fluid(maxWidth: 768, quality: 80) {

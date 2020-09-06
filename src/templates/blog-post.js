@@ -69,7 +69,16 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+
+        <div className="blog-post-tags">
+          <ul className="tags">
+            {frontmatter.tags.map((value, index) => {
+              return <li className="tag" key={index}>{value}</li>
+            })}
+          </ul>
+        </div>
       </article>
+
       {(previous || next) && (
         <Pagination {...props} />
       )}
@@ -92,6 +101,7 @@ export const pageQuery = graphql`
         slug
         title
         description
+        tags
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1980, maxHeight: 768, quality: 80, srcSetBreakpoints: [350, 700, 1050, 1400]) {
