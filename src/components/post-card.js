@@ -11,7 +11,7 @@ const PostCard = ({ data }) => (
       <p className="meta"><time>{data.frontmatter.date}</time> &middot; <span>{data.fields.readingTime.text}</span></p>
       <ul className="tags">
         {data.frontmatter.tags.map((value, index) => {
-          return <Link to={`/tags/${value}/`}><li className="tag" key={index}>{value}</li></Link>
+          return <Link to={`/tags/${value}/`} key={index}><li className="tag">{value}</li></Link>
         })}
       </ul>
       <p className="description">{data.frontmatter.description}</p>

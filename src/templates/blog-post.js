@@ -73,7 +73,7 @@ const Post = ({ data, pageContext }) => {
         <div className="blog-post-tags">
           <ul className="tags">
             {frontmatter.tags.map((value, index) => {
-              return <Link to={`/tags/${value}/`}><li className="tag" key={index}>{value}</li></Link>
+              return <Link to={`/tags/${value}/`} key={index}><li className="tag">{value}</li></Link>
             })}
           </ul>
         </div>
