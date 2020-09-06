@@ -10,11 +10,17 @@ class Social extends React.Component {
 
   copyMail() {
     navigator.clipboard.writeText(this.props.email)
-    document.getElementById("mailtooltip").innerHTML = "Copied";
+    var elements = document.getElementsByClassName('mail-tool-tip-text');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = "Copied";
+    }
   }
 
   copiedMail() {
-    document.getElementById("mailtooltip").innerHTML = "Copy Email";
+    var elements = document.getElementsByClassName('mail-tool-tip-text');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].innerHTML = "Copy Mail";
+    }
   }
 
   render () {
@@ -23,7 +29,7 @@ class Social extends React.Component {
         <a aria-label="rss" href="/rss.xml"><RiRssFill /></a>
         <button className="social-mail-button" aria-label="mail" onClick={this.copyMail} onMouseOut={this.copiedMail} onBlur={this.copiedMail}>
           <RiMailLine />
-          <span className="tooltiptext" id="mailtooltip">Copy Email</span>
+          <span className="mail-tool-tip-text">Copy Email</span>
         </button>
         <a aria-label="linkedin" href={"https://linkedin.com/in/"+this.props.username}><RiLinkedinBoxFill /></a>
         <a aria-label="twitter" href={"https://twitter.com/"+this.props.username}><RiTwitterFill /></a>

@@ -12,7 +12,9 @@
 
 .social-links {
 	margin-right: 15px;
-	a, button {
+	font-size: 24px;
+
+	a {
 		margin-left: 15px;
 		color: rgba(0,0,0,0.7);
 		&:hover {
@@ -20,20 +22,25 @@
 		}
 	}
 	button {
+		margin-left: 15px;
+		background: none;
 		border: 0;
 		padding: 0;
 		font-size: 100%;
 		cursor: pointer;
 		outline: none;
+		color: rgba(0,0,0,0.7);
+		&:hover {
+			color: rgb(0,0,0);
+		}
 	}
-	font-size: 24px;
 
 	.social-mail-button {
 		position: relative;
 		display: inline-block;
 	}
 	
-	.social-mail-button .tooltiptext {
+	.social-mail-button .mail-tool-tip-text {
 		font-size: 12px;
 		visibility: hidden;
 		width: 80px;
@@ -51,13 +58,13 @@
 		transition: opacity 0.3s;
 	}
 	
-	.social-mail-button:hover .tooltiptext {
+	.social-mail-button:hover .mail-tool-tip-text {
 		visibility: visible;
 		opacity: 1;
 	}
 
 	@media (max-width: $breakpoint-lg) {
-		display: none;
+		font-size: 20px;
 	}
 }
 
@@ -66,6 +73,9 @@
 	justify-content: flex-start;
 	@media (max-width: $breakpoint-lg) {
 		justify-content: space-between;
+		.social-links {
+			display: none;
+		}
 	}
   align-items: center;
   position: relative;
