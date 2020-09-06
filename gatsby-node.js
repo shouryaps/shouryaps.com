@@ -4,8 +4,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  //const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const blogList = path.resolve(`./src/templates/blog-list.js`)
+  const tagPage = path.resolve(`./src/templates/tag-page.js`)
 
   const result = await graphql(`
     {
@@ -19,6 +19,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
               template
               title
+              tags
             }
           }
         }
@@ -31,6 +32,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
+  // holds tags with post counts
+  tagCounts = {}
 
   // Create markdown pages
   const posts = result.data.allMarkdownRemark.edges
@@ -56,14 +60,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     // Count blog posts.
     if (post.node.frontmatter.template === 'blog-post') {
+      post.node.frontmatter.tags.forEach(tag => {
+        if (tag in tagCounts) {
+          tagCounts[tag]++
+        } else {
+          tagCounts[tag] = 1
+        }
+      })
       blogPostsCount++
     }
   })
 
-  // Create blog-list pages
   const postsPerPage = 6
-  const numPages = Math.ceil(blogPostsCount / postsPerPage)
 
+  // Create blog-list pages
+  const numPages = Math.ceil(blogPostsCount / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/blog` : `/blog/${i + 1}`,
@@ -76,6 +87,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  // Create tag pages
+  for(var tag in tagCounts) {
+    var numTagPages = Math.ceil(tagCounts[tag] / postsPerPage)
+    Array.from({ length: numTagPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/tags/${tag}/` : `/tags/${tag}/${i + 1}`,
+        component: tagPage,
+        context: {
+          tag: tag,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages: numTagPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+  }
 
 }
 

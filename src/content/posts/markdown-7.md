@@ -3,7 +3,7 @@ template: blog-post
 title: "Some long post title to test the design 7"
 slug: /markdown-7
 date: 2020-09-02T08:53:16.102Z
-tags: ["Markdown", "Frontend", "Blogging"]
+tags: ["markdown", "frontend", "blogging"]
 description: "Suspendisse consequat lacus vel dui tincidunt, in euismod tellus efficitur. Suspendisse consequat lacus vel dui."
 featuredImage: images/kevin-ku-aiyBwbrWWlo-unsplash.jpg
 ---

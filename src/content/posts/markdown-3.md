@@ -3,7 +3,7 @@ template: blog-post
 title: "Some long post title to test the design 3"
 slug: /markdown-3
 date: 2020-09-01T05:53:16.102Z
-tags: ["Markdown", "Testing"]
+tags: ["markdown", "testing"]
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus."
 featuredImage: images/alex-zr48yvupk04-unsplash.jpg
 ---

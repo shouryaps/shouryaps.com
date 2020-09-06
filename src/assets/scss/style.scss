@@ -2,6 +2,16 @@
 @import "defaults";
 @import "lib/css-grid-utility";
 
+.tag-page-header {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	align-items: center;
+	h1 {
+		text-transform: capitalize;
+	}
+}
+
 .primary-container main {
 	min-height: calc(100vh - 60px - 81px);
 }
@@ -242,6 +252,7 @@ ul.tags {
 	list-style: none;
 	li.tag {
 		display: inline-block;
+		text-transform: capitalize;
 		margin-right: 8px;
 		padding: 5px 10px;
 		border-radius: var(--border-radius);

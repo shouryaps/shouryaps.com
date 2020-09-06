@@ -3,7 +3,7 @@ template: blog-post
 title: "Some long post title to test the design 6"
 slug: /markdown-6
 date: 2020-09-02T07:53:16.102Z
-tags: ["Life", "Random"]
+tags: ["life", "random", "markdown"]
 description: "Sed sollicitudin commodo orci aliquet egestas."
 featuredImage: images/aditya-siva-6rDbvXzIVpQ-unsplash.jpg
 ---
