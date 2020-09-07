@@ -115,7 +115,10 @@
     border: none;
     color: #000000;
     padding: 0;
-    cursor: pointer;
+		cursor: pointer;
+		&:focus {
+			outline: 0;
+		}
   }
   @media (max-width: $breakpoint-lg) {
 		flex-grow: 0;
@@ -145,8 +148,7 @@
       top: 100%;
       z-index: 1;
       background: white;
-      width: 100%;
-			max-width: 320px;    
+      width: 100%;   
 			border-radius: 0 0 0 var(--border-radius);
 			border: 1px solid rgba(0,0,0,0.12);
 			box-shadow: 0 30px 60px rgba(0,0,0,0.1);
@@ -253,9 +255,15 @@ ul.tags {
 
 .tag-cloud {
 	li.tag {
-		background-color: var(--tag-cloud-background-color) !important;
+		padding: 10px 20px !important;
+		font-size: 18px !important;
+		background-color: var(--tag-cloud-bg-color) !important;
 		color: var(--tag-cloud-text-color) !important;
 		margin-bottom: 20px;
+		&:hover {
+			background-color: var(--tag-cloud-hover-bg-color) !important;
+			color: var(--tag-cloud-hover-text-color) !important;
+		}
 	} 
 }
 
@@ -317,7 +325,7 @@ ul.tags {
 		}
 		.featured-image-div {
 			img {
-				border-radius: var(--border-radius) var(--border-radius) 0 0;
+				border-radius: 0 0 var(--border-radius) var(--border-radius);
 			}
 		}
 	}
