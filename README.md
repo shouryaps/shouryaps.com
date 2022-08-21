@@ -1,6 +1,6 @@
-# shouryaps.com
+# Shourya's Home on Internet
 
-Shourya's Home on Internet.
+[shouryaps.com](shouryaps.com)
 
 Made using [Hugo](https://gohugo.io/) and https://github.com/shouryaps/hugo-shourya-winston-theme
 
