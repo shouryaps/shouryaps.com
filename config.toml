@@ -1,3 +1,30 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://shouryaps.com/"
+languageCode = "en-us"
+title = "@shouryaps"
+themesDir = "../.."
+theme = "hugo-shourya-winston-theme"
+
+paginate = 5
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  twitterHandle = "@shouryaps"
+  twitterUsername = "shouryaps"
+  
+  introMD= "**Shourya's** Home on Internet"
+
+  showPostsOnHomepage = true
+  maxHomepagePosts = 2
+  showAuthorNameOnPosts = false
+
+  addFrame = true
+  addDot = true
+
+  highlightColor = '#7b16ff'
+
+[taxonomies]
+    tag = "tags"
