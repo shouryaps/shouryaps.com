@@ -1,6 +1,6 @@
 ---
 title: Shourya's Home on Internet
-description: This page is under development. Please check back this space later.
+description: This page is a work in progress.
 ---
 
-This page is under development. Please check back this space later.
+This page is a work in progress.

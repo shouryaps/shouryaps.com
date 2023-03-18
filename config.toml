@@ -2,29 +2,30 @@ baseURL = "https://shouryaps.com/"
 languageCode = "en-us"
 title = "@shouryaps"
 themesDir = "themes"
-theme = "hugo-shourya-winston-theme"
+theme = "hugo-shouryaps-blog-theme"
 
 paginate = 5
 
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.55.0"
+[module.hugoVersion]
+extended = true
+min = "0.55.0"
 
 [params]
-  twitterHandle = "@shouryaps"
-  twitterUsername = "shouryaps"
-  
-  introMD= "**Shourya's** Home on Internet"
+twitterHandle = "@shouryaps"
 
-  showPostsOnHomepage = true
-  maxHomepagePosts = 2
-  showAuthorNameOnPosts = false
+twitterUsername = "shouryaps"
+linkedinUsername = "shouryaps"
+githubUsername = "shouryaps"
 
-  addFrame = true
-  addDot = true
+introMD = "**Shourya's** Home on Internet"
 
-  highlightColor = '#7b16ff'
+showPostsOnHomepage = true
+maxHomepagePosts = 2
+
+addDot = true
+
+highlightColor = '#113CFC'
 
 [taxonomies]
-    tag = "tags"
+tag = "tags"
