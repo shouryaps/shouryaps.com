@@ -1,6 +1,5 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-image: images/shouryaps.jpg
 menu:
   main:
     name: "{{ replace .TranslationBaseName "-" " " | title }}"

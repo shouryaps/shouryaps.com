@@ -1,6 +1,5 @@
 ---
 title: 'About'
-image: images/shouryaps.jpg
 menu:
   main:
     name: "About"
